@@ -1,89 +1,85 @@
-# 🦜 Parr-Desi — Travel with Strangers. Leave as Family.
+# Parr-Desi 🦜
 
-> India's #1 Social Travel Community — curated group trips where every stranger becomes a friend.
-
----
-
-## 🌍 About
-
-**Parr-Desi** is a social travel booking platform built for solo travelers who want to explore India and beyond without going alone. Users can browse and book curated group travel packages, connect with a community of like-minded adventurers, and share their travel stories.
-
-The name *Parr-Desi* plays on the Hindi words *pardesi* (traveler/foreigner) — capturing the spirit of exploring new places while finding your people.
+A travel booking website I built for group trips across India and internationally. The idea behind it is simple — solo travelers who don't want to travel alone can join curated group trips, meet strangers, and leave as friends.
 
 ---
 
-## ✨ Features
+## What I Built
 
-- **Trip Listings** — Browse curated domestic and international group travel packages with pricing, duration, itinerary, inclusions, and exclusions
-- **Trip Detail Pages** — Full itinerary breakdown by day, highlights, FAQs, and an inquiry form
-- **Inquiry & Booking** — Send inquiries directly from a trip page with a next departure countdown timer
-- **Scrolling Trip Ticker** — Live marquee banner showing all upcoming departures at a glance
-- **Traveler Stories** — Review section featuring past travelers and their experiences
-- **Newsletter Signup** — Subscribe for early access to trips, deals, and community updates
-- **AI Chatbot** — Floating chat assistant to help users with trip questions and recommendations
-- **Community Section** — Space for travelers to connect beyond just the trips
+Parr-Desi is a full frontend travel platform with the following pages and features:
+
+### Home Page
+- Full-screen hero with the tagline *"Travel with Strangers. Leave as Family."*
+- A scrolling ticker at the top showing all upcoming trip departures
+- Popular Trips section showcasing featured packages with images, pricing, and a "View Details" link
+- Traveler Stories section with real-looking reviews from past trip members
+- Newsletter signup CTA at the bottom
+
+### Trips & Trip Detail Pages
+- Individual trip pages with a hero banner, trip overview, and a day-by-day itinerary (collapsible accordion)
+- Inclusions and exclusions clearly listed
+- Trip highlights shown as pill tags (e.g. Paragliding, Trekking, Stargazing, Mountain bonfire)
+- FAQs section
+- Sticky sidebar with:
+  - Price per person (e.g. ₹11,999)
+  - An inquiry form (name, email, phone, message)
+  - A live **Next Departure Countdown** timer
+
+### AI Chatbot — Parr-Desi AI
+- Floating chat button accessible on every page
+- Opens a full chat panel with the **Parr-Desi AI** travel buddy
+- Greets users and offers quick-reply suggestion chips:
+  - *"What trips are under ₹15,000?"*
+  - *"Tell me about Bali trip"*
+  - *"Is it safe for solo travelers?"*
+  - *"How do I book a trip?"*
+- Free-text input so users can ask anything about trips, prices, or logistics
+- Powered by the **Claude API (Anthropic)** — the bot has context about all trips on the platform and can answer questions conversationally
 
 ---
 
-## 🗺️ Sample Trips
+## Trips on the Platform
 
-| Trip | Location | Duration | Price |
-|------|----------|----------|-------|
-| Manali Mountain Escape | Manali | 5 Days / 4 Nights | ₹11,999 |
-| Rajasthan Royal Trail | Rajasthan | 6 Days / 5 Nights | ₹14,999 |
-| Bali Tropical Dream | Bali | 6 Days / 5 Nights | ₹34,999 |
-| Kerala Backwater Bliss | Kerala | TBD | TBD |
-| Goa Beach Vibes | Goa | TBD | TBD |
-
----
-
-## 🖥️ Pages
-
-- **Home** — Hero section, popular trips, traveler stories, newsletter CTA
-- **Trips** — Full listing of all available packages
-- **Trip Detail** — Day-by-day itinerary, inclusions/exclusions, highlights, inquiry form, departure countdown
-- **Community** — Traveler community hub
-- **Contact** — Get in touch
+| Trip | Destination | Duration | Starting Price |
+|------|-------------|----------|----------------|
+| Manali Mountain Escape | Manali, India | 5 Days / 4 Nights | ₹11,999 |
+| Rajasthan Royal Trail | Rajasthan, India | 6 Days / 5 Nights | ₹14,999 |
+| Bali Tropical Dream | Bali, Indonesia | 6 Days / 5 Nights | ₹34,999 |
+| Kerala Backwater Bliss | Kerala, India | — | — |
+| Goa Beach Vibes | Goa, India | — | — |
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-> This project was built with the assistance of AI tools for accelerated development.
-
-- **Frontend:** HTML, CSS, JavaScript (React / Next.js)
+- **Frontend:** React / Next.js
 - **Styling:** Tailwind CSS
-- **AI Chatbot:** Integrated conversational assistant for trip support
-- **Deployment:** Vercel / Netlify
+- **AI Chatbot:** Claude API (Anthropic)
+- Built with the help of AI-assisted development tools
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
-### Hero Section
-![Hero](./screenshots/hero.png)
-
-### Popular Trips
-![Trips](./screenshots/trips.png)
-
-### Trip Detail Page
-![Detail](./screenshots/detail.png)
-
-### Traveler Stories
-![Reviews](./screenshots/reviews.png)
+| | |
+|---|---|
+| ![Hero](./screenshots/hero.png) | ![Trips](./screenshots/trips.png) |
+| ![Detail](./screenshots/detail.png) | ![Reviews](./screenshots/reviews.png) |
+| ![Chatbot](./screenshots/chatbot.png) | |
 
 ---
 
-## 🚀 Getting Started
+## Running Locally
 
-
+```bash
+git clone https://github.com/your-username/parr-desi.git
+cd parr-desi
+npm install
+npm run dev
+```
 
 ---
 
-## 📬 Contact
+## Why I Built This
 
-Have questions or want to collaborate? Reach out via the **Contact** page on the site or open an issue here on GitHub.
-
----
-
-<p align="center">Made with ❤️ for travelers, by travelers.</p>
+I wanted to build something that felt like a real product — not just a tutorial clone. Parr-Desi is inspired by the growing trend of social travel in India, where platforms bring together solo travelers for group adventures. The goal was to design and ship a polished, full-featured travel site with a working AI assistant, realistic trip data, and a clean UI.
