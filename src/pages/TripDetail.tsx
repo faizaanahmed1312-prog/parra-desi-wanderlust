@@ -4,6 +4,8 @@ import { usePackageDetail } from "@/hooks/usePackages";
 import { Clock, MapPin, Check, X, Star, ArrowLeft, Calendar } from "lucide-react";
 import { useState, useEffect } from "react";
 import { supabase } from "@/integrations/supabase/client";
+import { resolveTripImage } from "@/lib/images";
+
 import { toast } from "sonner";
 import {
   Accordion,
