@@ -1,73 +1,89 @@
-# Welcome to your Lovable project
+# 🦜 Parr-Desi — Travel with Strangers. Leave as Family.
 
-## Project info
+> India's #1 Social Travel Community — curated group trips where every stranger becomes a friend.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+## 🌍 About
 
-There are several ways of editing your application.
+**Parr-Desi** is a social travel booking platform built for solo travelers who want to explore India and beyond without going alone. Users can browse and book curated group travel packages, connect with a community of like-minded adventurers, and share their travel stories.
 
-**Use Lovable**
+The name *Parr-Desi* plays on the Hindi words *pardesi* (traveler/foreigner) — capturing the spirit of exploring new places while finding your people.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## ✨ Features
 
-**Use your preferred IDE**
+- **Trip Listings** — Browse curated domestic and international group travel packages with pricing, duration, itinerary, inclusions, and exclusions
+- **Trip Detail Pages** — Full itinerary breakdown by day, highlights, FAQs, and an inquiry form
+- **Inquiry & Booking** — Send inquiries directly from a trip page with a next departure countdown timer
+- **Scrolling Trip Ticker** — Live marquee banner showing all upcoming departures at a glance
+- **Traveler Stories** — Review section featuring past travelers and their experiences
+- **Newsletter Signup** — Subscribe for early access to trips, deals, and community updates
+- **AI Chatbot** — Floating chat assistant to help users with trip questions and recommendations
+- **Community Section** — Space for travelers to connect beyond just the trips
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🗺️ Sample Trips
 
-Follow these steps:
+| Trip | Location | Duration | Price |
+|------|----------|----------|-------|
+| Manali Mountain Escape | Manali | 5 Days / 4 Nights | ₹11,999 |
+| Rajasthan Royal Trail | Rajasthan | 6 Days / 5 Nights | ₹14,999 |
+| Bali Tropical Dream | Bali | 6 Days / 5 Nights | ₹34,999 |
+| Kerala Backwater Bliss | Kerala | TBD | TBD |
+| Goa Beach Vibes | Goa | TBD | TBD |
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🖥️ Pages
 
-# Step 3: Install the necessary dependencies.
-npm i
+- **Home** — Hero section, popular trips, traveler stories, newsletter CTA
+- **Trips** — Full listing of all available packages
+- **Trip Detail** — Day-by-day itinerary, inclusions/exclusions, highlights, inquiry form, departure countdown
+- **Community** — Traveler community hub
+- **Contact** — Get in touch
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+## 🛠️ Tech Stack
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+> This project was built with the assistance of AI tools for accelerated development.
 
-**Use GitHub Codespaces**
+- **Frontend:** HTML, CSS, JavaScript (React / Next.js)
+- **Styling:** Tailwind CSS
+- **AI Chatbot:** Integrated conversational assistant for trip support
+- **Deployment:** Vercel / Netlify
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## 📸 Screenshots
 
-This project is built with:
+### Hero Section
+![Hero](./screenshots/hero.png)
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Popular Trips
+![Trips](./screenshots/trips.png)
 
-## How can I deploy this project?
+### Trip Detail Page
+![Detail](./screenshots/detail.png)
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+### Traveler Stories
+![Reviews](./screenshots/reviews.png)
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+## 🚀 Getting Started
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+
+---
+
+## 📬 Contact
+
+Have questions or want to collaborate? Reach out via the **Contact** page on the site or open an issue here on GitHub.
+
+---
+
+<p align="center">Made with ❤️ for travelers, by travelers.</p>
