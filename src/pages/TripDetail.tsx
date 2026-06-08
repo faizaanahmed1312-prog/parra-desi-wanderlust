@@ -4,6 +4,8 @@ import { usePackageDetail } from "@/hooks/usePackages";
 import { Clock, MapPin, Check, X, Star, ArrowLeft, Calendar } from "lucide-react";
 import { useState, useEffect } from "react";
 import { supabase } from "@/integrations/supabase/client";
+import { resolveTripImage } from "@/lib/images";
+
 import { toast } from "sonner";
 import {
   Accordion,
@@ -112,11 +114,15 @@ const TripDetail = () => {
     <>
       {/* Hero */}
       <section className="relative h-[50vh] md:h-[60vh] flex items-end overflow-hidden">
-        {trip.image_url ? (
-          <img src={trip.image_url} alt={trip.name} className="absolute inset-0 w-full h-full object-cover" />
-        ) : (
-          <div className="absolute inset-0 bg-muted" />
-        )}
+        {(() => {
+          const heroImg = resolveTripImage({ image_url: trip.image_url, slug: trip.slug, destination: trip.destination });
+          return heroImg ? (
+            <img src={heroImg} alt={trip.name} className="absolute inset-0 w-full h-full object-cover" />
+          ) : (
+            <div className="absolute inset-0 bg-muted" />
+          );
+        })()}
+
         <div className="absolute inset-0 hero-overlay" />
         <div className="relative z-10 container pb-10">
           <Link to="/trips" className="inline-flex items-center gap-1 text-sm text-secondary-foreground/70 hover:text-primary mb-4 transition-colors">

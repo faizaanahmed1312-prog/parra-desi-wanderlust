@@ -2,8 +2,11 @@ import { Link } from "react-router-dom";
 import { Clock, MapPin, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import type { PackageData } from "@/hooks/usePackages";
+import { resolveTripImage } from "@/lib/images";
+
 
 const TripCard = ({ trip, index = 0 }: { trip: PackageData; index?: number }) => {
+  const img = resolveTripImage({ image_url: trip.image_url, slug: trip.slug, destination: trip.destination });
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -14,9 +17,9 @@ const TripCard = ({ trip, index = 0 }: { trip: PackageData; index?: number }) =>
       <Link to={`/trips/${trip.slug}`} className="group block">
         <div className="bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-warm transition-all duration-300 hover:-translate-y-1">
           <div className="relative h-52 overflow-hidden">
-            {trip.image_url ? (
+            {img ? (
               <img
-                src={trip.image_url}
+                src={img}
                 alt={trip.name}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
@@ -28,6 +31,7 @@ const TripCard = ({ trip, index = 0 }: { trip: PackageData; index?: number }) =>
             <div className="absolute top-3 right-3 bg-primary text-primary-foreground text-xs font-bold px-3 py-1 rounded-full">
               {trip.type}
             </div>
+
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-foreground/60 to-transparent h-20" />
           </div>
           <div className="p-5">

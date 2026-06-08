@@ -11,3 +11,21 @@ export const tripImages: Record<string, string> = {
   rajasthan: rajasthanImg,
   kerala: keralaImg,
 };
+
+// Resolve a trip image from explicit URL, slug, or destination name.
+export const resolveTripImage = (opts: {
+  image_url?: string | null;
+  slug?: string | null;
+  destination?: string | null;
+}): string | undefined => {
+  if (opts.image_url) return opts.image_url;
+  const keys = [opts.slug, opts.destination]
+    .filter(Boolean)
+    .map((s) => s!.toLowerCase());
+  for (const k of keys) {
+    for (const key of Object.keys(tripImages)) {
+      if (k.includes(key)) return tripImages[key];
+    }
+  }
+  return undefined;
+};
