@@ -63,11 +63,13 @@ Parr-Desi is a full frontend travel platform with the following pages and featur
 
 | | |
 |---|---|
-| ![Hero](./screenshots/hero.png) | ![Trips](./screenshots/trips.png) |
-| ![Detail](./screenshots/detail.png) | ![Reviews](./screenshots/reviews.png) |
-| ![Chatbot](./screenshots/chatbot.png) | |
+| ![Hero](./imagesp/hero.png) | ![Trips](./imagesp/trips.png) |
+| ![Detail](./imagesp/detail.png) | ![Reviews](./imagesp/reviews.png) |
+| ![Chatbot](./imagesp/chatbot.png) | |
 
 ---
+
+
 
 ---
 
