@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { Clock, MapPin, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import type { PackageData } from "@/hooks/usePackages";
+import { resolveTripImage } from "@/lib/images";
+
 
 const TripCard = ({ trip, index = 0 }: { trip: PackageData; index?: number }) => {
   return (
