@@ -69,15 +69,6 @@ Parr-Desi is a full frontend travel platform with the following pages and featur
 
 ---
 
-## Running Locally
-
-```bash
-git clone https://github.com/your-username/parr-desi.git
-cd parr-desi
-npm install
-npm run dev
-```
-
 ---
 
 ## Why I Built This
